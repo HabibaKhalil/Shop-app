@@ -3,25 +3,29 @@ package com.example;
 import androidx.appcompat.app.AppCompatActivity;
 
 import activity.LoginActivity;
+import activity.RegisterActivity;
 import helper.SQLiteHandler;
 import helper.SessionManager;
 
 import java.util.HashMap;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.trudysshop.MapsActivity;
+
 import com.example.trudysshop.R;
+
 
 public class MainActivity extends AppCompatActivity {
     private TextView txtName;
     private TextView txtEmail;
     private Button btnLogout;
     private Button btnMaps;
+    ;
 
 
     private SQLiteHandler db;
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         txtEmail = (TextView) findViewById(R.id.email);
         btnLogout = (Button) findViewById(R.id.btnLogout);
         btnMaps= (Button) findViewById(R.id.CurrentLocation);
+
 
 
         // SqLite database handler
