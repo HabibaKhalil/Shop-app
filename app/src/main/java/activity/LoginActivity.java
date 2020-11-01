@@ -20,7 +20,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.example.MainActivity;
 import com.example.trudysshop.R;
 import app.AppConfig;
 import app.AppController;
@@ -163,7 +162,7 @@ public class LoginActivity extends Activity{
 
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Log.e(TAG, "Login Error: " + error.getMessage());
+                    Log.e(TAG, "Login Error here: " + error.getMessage());
                     Toast.makeText(getApplicationContext(),
                             error.getMessage(), Toast.LENGTH_LONG).show();
                     hideDialog();

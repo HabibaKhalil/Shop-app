@@ -1,16 +1,13 @@
-package com.example;
+package activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import activity.LoginActivity;
-import activity.RegisterActivity;
 import helper.SQLiteHandler;
 import helper.SessionManager;
 
 import java.util.HashMap;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         String email = user.get("email");
 
         // Displaying the user details on the screen
-        txtName.setText(name);
-        txtEmail.setText(email);
+        txtName.setText(name + " ");
+        txtEmail.setText(email + " ");
 
 
         // Logout button click event

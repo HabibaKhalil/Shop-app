@@ -20,7 +20,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.example.MainActivity;
 import com.example.trudysshop.R;
 import app.AppConfig;
 import app.AppController;
